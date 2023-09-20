@@ -1,7 +1,6 @@
 # Virtual Store Project
 
-This is a virtual store project developed using ASP.NET MVC and WebAPI. It allows users to browse, select, and purchase products from a catalog. The project also includes optional features such as user authentication, product management, and more.
-
+This is a virtual store project developed using ASP.NET MVC and WebAPI. It allows users to browse, select, and purchase products from a catalog.
 ## 
 
 1. **Database Tables:** The project includes various database tables to store product information, user data, and order details.
