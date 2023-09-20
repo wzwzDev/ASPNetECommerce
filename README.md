@@ -21,25 +21,25 @@ This is a virtual store project developed using ASP.NET MVC and WebAPI. It allow
 
 ### 
 
-1. **Product Images:** Product images are displayed alongside product listings.
+9. **Product Images:** Product images are displayed alongside product listings.
 
-2. **Product Management (Admin):** An admin panel allows for the creation, editing, and deletion of products.
+10. **Product Management (Admin):** An admin panel allows for the creation, editing, and deletion of products.
 
-3. **Foreign Keys and Relationships:** The database includes foreign keys and relationships between tables for data integrity.
+11. **Foreign Keys and Relationships:** The database includes foreign keys and relationships between tables for data integrity.
 
-4. **User Authentication:** Users can log in with their credentials, and their identity is used for order tracking.
+12. **User Authentication:** Users can log in with their credentials, and their identity is used for order tracking.
 
-5. **CSS Styling:** The project features CSS styles for an appealing user interface.
+13. **CSS Styling:** The project features CSS styles for an appealing user interface.
 
-6. **Master Pages (Layout):** Layout templates provide a consistent look and feel across the application.
+14. **Master Pages (Layout):** Layout templates provide a consistent look and feel across the application.
 
-7. **RESTful API:** An API endpoint is available to fetch a list of products.
+15. **RESTful API:** An API endpoint is available to fetch a list of products.
 
-8. **Input Validation:** User input is validated to prevent errors and security vulnerabilities.
+16. **Input Validation:** User input is validated to prevent errors and security vulnerabilities.
 
-9. **Low Stock Alert:** If a product's stock falls below a certain threshold (e.g., 2 units), a record is created in a stock table to prompt restocking.
+17. **Low Stock Alert:** If a product's stock falls below a certain threshold (e.g., 2 units), a record is created in a stock table to prompt restocking.
 
-10. **Total Order Amount:** The project calculates and stores the total order amount.
+18. **Total Order Amount:** The project calculates and stores the total order amount.
 
 ## Getting Started
 
