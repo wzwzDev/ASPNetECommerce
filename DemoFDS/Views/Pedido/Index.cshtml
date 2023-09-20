@@ -1,0 +1,55 @@
+﻿@model IEnumerable<DemoFDS.Models.Pedido>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using DemoFDS.Models;
+
+<h2>Lista de pedidos de @User.Identity.Name</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            <p>Usuario</p>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </th>
+        <th>
+            <p>Producto</p>
+        </th>
+
+
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.Cliente)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Fecha)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Cantidad)
+    </td>
+
+    <td>
+        @{
+            ModeloTiendaContainer con = new ModeloTiendaContainer();
+            Producto p = con.Productos.Find(item.Id);
+        }
+        @Html.DisplayFor(modelItem => p.Nombre)
+    </td>
+</tr>
+    }
+
+</table>

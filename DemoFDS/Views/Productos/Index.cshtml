@@ -1,0 +1,91 @@
+﻿@model IEnumerable<DemoFDS.Models.Producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Productos</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Imagen)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Nombre)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.Precio)
+    </td>
+    <td>
+        @if (item.Cantidad == 0)
+        {
+            <p>Sin stock</p>
+        }
+        else
+        {
+            @Html.DisplayFor(modelItem => item.Cantidad)
+        }
+    </td>
+    <td>
+        @if (item.Cantidad == 0)
+        {
+            <img src=https://bsb-spain.com/wp-content/uploads/2018/04/ago.jpg width="50" height="50">
+        }
+        else
+        {
+            <img src=@Html.DisplayFor(modelItem => item.Imagen) width="50" height="50">
+        }
+    </td>
+
+    <td>
+    <td>
+        @Html.ActionLink("Detalles", "Details", new { id = item.Id }) |
+        @if (User.Identity.IsAuthenticated)
+        {
+            @Html.ActionLink("Editar", "Edit", new { id = item.Id })
+            <span> | </span>
+            @Html.ActionLink("Borrar", "Delete", new { id = item.Id })
+            <span> | </span>
+        }
+
+        @if (item.Cantidad > 0)
+        {
+
+            @Html.ActionLink("ADD", "Add", "Carrito",
+                            new { id = item.Id }, null)
+        }
+    </td>
+
+
+
+
+
+
+   
+
+
+</tr>
+}
+
+</table>
