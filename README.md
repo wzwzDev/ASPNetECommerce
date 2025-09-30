@@ -1,7 +1,7 @@
-# Virtual Store Project
+# ASPNetECommerce
 
-This is a virtual store project developed using ASP.NET MVC and WebAPI. It allows users to browse, select, and purchase products from a catalog.
-## 
+This ASP.NET MVC and WebAPI-based e-commerce application enables users to explore a product catalog, add items to a shopping cart, and complete purchases seamlessly. The system features user authentication, stock management, and an admin panel for product management. It also provides a RESTful API for product data access and ensures a smooth, responsive shopping experience with session-based cart handling and real-time stock updates.
+
 
 1. **Database Tables:** The project includes various database tables to store product information, user data, and order details.
 
